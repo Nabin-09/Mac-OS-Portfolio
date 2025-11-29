@@ -4,8 +4,8 @@ import {Navbar , Welcome} from '#components'
 const App = () => {
   return (
     <main>
-      <Navbar></Navbar>
-      <Welcome></Welcome>
+      <Navbar/>
+      <Welcome/>
     </main>
   )
 }
