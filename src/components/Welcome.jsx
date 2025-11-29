@@ -20,8 +20,19 @@ const Welcome = () => {
   const subtitleRef = useRef(null);
 
   return <section id="welcome">
-    <p ref={subtitleRef}>Hey , I am Nabin! Welcome to my</p>
-    <h1 ref={titleRef} className="mt - 7">Portfolio</h1>
+    <p ref={subtitleRef}>
+        {renderText(
+          "Hey , I'm Nabin Welcome to my",
+          "text-4xl font-georama",
+          300
+        )}
+
+    </p>
+    <h1 ref={titleRef} className="mt - 7">
+      {
+        renderText("portfolio" , "text-9xl italic font-georama")
+      }
+    </h1>
 
     <div className="small-screen">
       <p>This portfolio is designed for desktop and tablets only.</p>
