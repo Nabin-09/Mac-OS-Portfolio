@@ -1,6 +1,6 @@
 import WindowWrapper from "#components/hoc/WindowWrapper";
 import { techStack } from "#constants";
-import { Check } from "lucide-react";
+import { Check , Flag } from "lucide-react";
 
 const Terminal = () => {
     return (
@@ -38,7 +38,14 @@ const Terminal = () => {
                         </li>
                     ))}
                 </ul>
-
+                <div className="footnote">
+                    <p>
+                        <Check size={20}/>5 of 5 stacks loaded succesfully(100%)
+                    </p>
+                    <p className="text-black">
+                        <Flag size = {15} fill = 'black'/> Render time : 4ms
+                    </p>
+                </div>
                 
             </div>
         </>
